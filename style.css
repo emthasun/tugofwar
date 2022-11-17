@@ -57,12 +57,12 @@ body {
 
 }
 .letter_1{
-    background-image: url("/images/up/img_3.png");
+    background-image: url("./images/up/img_3.png");
     transform-origin: top;
 }
 .letter_2{
     bottom: 6vw ;
     top: auto;
-    background-image: url("/images/down/img_3.png");
+    background-image: url("./images/down/img_3.png");
     transform-origin: bottom;
 }
