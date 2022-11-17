@@ -8,11 +8,11 @@ addEventListener("load", (event) => {
         if(direction === 'up'){
             num = Math.floor(Math.random()*7)+1
             selected_letter = 1
-            document.getElementsByClassName("letter_1")[0].style.backgroundImage = 'url("images/up/img_' + num + '.png")'
+            document.getElementsByClassName("letter_1")[0].style.backgroundImage = 'url("./images/up/img_' + num + '.png")'
         }
         if(direction === 'down'){
             selected_letter = 2
-            document.getElementsByClassName("letter_2")[0].style.backgroundImage = 'url("images/down/img_' + num + '.png")'
+            document.getElementsByClassName("letter_2")[0].style.backgroundImage = 'url("./images/down/img_' + num + '.png")'
         }
     }
 
