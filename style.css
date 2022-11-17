@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Gravity";
+    src: url('fonts/ABCGravityVariableEdu.woff2') format("woff2-variations");
+}
+html {
+height: 100%;
+}
+body {
+    overflow: hidden;
+    height: 100%;
+    /* background-image: url("/images/dégradé.png");
+    background-size:cover; */
+    background: linear-gradient(180deg, rgba(185,22,28,1) 0%, rgba(61,61,251,1) 26%, rgba(255,255,255,1) 41%, rgba(255,242,97,1) 58%, rgba(255,71,78,1) 80%, rgba(255,179,71,1) 100%);
+    /*background: linear-gradient(#1792ea, rgb(216, 31, 133), #87d30d, white);*/
+    margin: 6vw 0vw;
+    display:grid;
+   }
+.gradient{
+    position: absolute;
+    width:100vw;
+    height: 50%;
+    z-index: 1;
+}
+.gradient_1{
+    transform-origin: top;
+    background: linear-gradient(black, white);
+    top: 0;
+}
+.gradient_2{
+    transform-origin: bottom;
+    background: linear-gradient(red,blue);
+    bottom: 0vw ;
+    top: auto;
+}
+
+
+
+#overlay{
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.letter{
+    mix-blend-mode: difference;
+    position: absolute;
+    width:100vw;
+    height: 50%;
+    background-size: 100% 100%;
+    z-index: 3;
+
+}
+.letter_1{
+    background-image: url("/images/up/img_3.png");
+    transform-origin: top;
+}
+.letter_2{
+    bottom: 6vw ;
+    top: auto;
+    background-image: url("/images/down/img_3.png");
+    transform-origin: bottom;
+}
