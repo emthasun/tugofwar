@@ -6,13 +6,15 @@ html {
 height: 100%;
 }
 body {
+    font-family: "Gravity";
     overflow: hidden;
     height: 100%;
     /* background-image: url("/images/dégradé.png");
     background-size:cover; */
     background: linear-gradient(180deg, rgba(185,22,28,1) 0%, rgba(61,61,251,1) 26%, rgba(255,255,255,1) 41%, rgba(255,242,97,1) 58%, rgba(255,71,78,1) 80%, rgba(255,179,71,1) 100%);
     /*background: linear-gradient(#1792ea, rgb(216, 31, 133), #87d30d, white);*/
-    margin: 6vw 0vw;
+    
+    margin: 0vw 0vw;
     display:grid;
    }
 .gradient{
@@ -42,27 +44,33 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
-
-
-
 
 .letter{
     mix-blend-mode: difference;
     position: absolute;
     width:100vw;
     height: 50%;
-    background-size: 100% 100%;
+    background-position-x: center;
+    background-size: 100vw 100%;
     z-index: 3;
-
 }
 .letter_1{
-    background-image: url("./images/up/img_3.png");
+    background-image: url("./svg/up/img_1.svg");
     transform-origin: top;
 }
 .letter_2{
-    bottom: 6vw ;
+    bottom: 0vw ;
     top: auto;
-    background-image: url("./images/down/img_3.png");
+    background-image: url("./svg/down/img_3.svg");
     transform-origin: bottom;
+}
+
+.hidden {
+    display: none !important;
 }
