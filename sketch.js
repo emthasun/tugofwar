@@ -29,14 +29,14 @@ addEventListener("load", (event) => {
                     if (state === 'granted') {
                         document.getElementById("overlay").classList.add("hidden");
                         window.addEventListener("deviceorientation", (event) => {
-                            document.getElementsByClassName("letter_1")[0].style.transform = 'scaleX(170%) scaleY(' + map_range(event.beta, -90, 90, 0, 2) + ')'
-                            document.getElementsByClassName("letter_2")[0].style.transform = 'scaleX(170%) scaleY(' + map_range(event.beta, -90, 90, 2, 0) + ')'
+                            document.getElementsByClassName("letter_1")[0].style.transform = 'scaleX(170%) scaleY(' + map_range(event.beta, -90, 90, 0, 1.9) + ')'
+                            document.getElementsByClassName("letter_2")[0].style.transform = 'scaleX(170%) scaleY(' + map_range(event.beta, -90, 90, 1.9, 0) + ')'
                             document.getElementsByClassName("gradient_1")[0].style.transform = 'scaleY(' + map_range(event.beta, -90, 90, 0, 2.2) + ')'
                             document.getElementsByClassName("gradient_2")[0].style.transform = 'scaleY(' + map_range(event.beta, -90, 90, 2.2, 0) + ')'
-                            if (event.beta < -63 && (selected_letter == 2 || selected_letter == 0)) {
+                            if (event.beta < -75 && (selected_letter == 2 || selected_letter == 0)) {
                                 random('up')
                             }
-                            if (event.beta > 63 && (selected_letter == 1 || selected_letter == 0)) {
+                            if (event.beta > 75 && (selected_letter == 1 || selected_letter == 0)) {
                                 random('down')
                             }
                         }, true);

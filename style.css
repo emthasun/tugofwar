@@ -14,7 +14,7 @@ body {
     /* background: linear-gradient(180deg, rgb(240, 209, 210) 0%, rgb(171, 171, 255) 26%, rgba(255,255,255,1) 41%, rgb(255, 251, 206) 58%, rgb(255, 226, 227) 80%, rgb(255, 233, 203) 100%); */ */
     /*background: linear-gradient(#1792ea, rgb(216, 31, 133), #87d30d, white);*/
     
-    margin: 0vw 0vw;
+    margin: 4vw 0vw;
     display:grid;
    }
 .gradient{
@@ -66,7 +66,7 @@ body {
 }
 
 .letter{
-    mix-blend-mode: difference;
+    mix-blend-mode: exclusion;
     position: absolute;
     width:100vw;
     height: 50%;
@@ -75,6 +75,8 @@ body {
     z-index: 3;
 }
 .letter_1{
+    top: 0vw;
+    bottom: auto;
     background-image: url("./svg/up/img_1.svg");
     transform-origin: top;
 }
